@@ -1,0 +1,64 @@
+.life{
+    width: 100%;
+    min-height: 757px;
+    padding-top: 100px;
+    background-color: $bg-color;
+    &__style{
+        margin: 0 auto;
+        height: 472px;
+        width: 1173px;
+        display: grid;
+        grid-template-columns:308px 308px 497px;
+        gap: 30px;    
+    }
+    &__photo{
+        width: 100%;
+        &:nth-child(2){
+            align-self: flex-end;
+        }
+    }
+    &__info{
+        margin-left: 46px;
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        &-text{
+            margin-top: 50px;
+        }
+    }
+    &__btn{
+        margin-top: 40px;
+    }
+    &__advantages{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 104px;
+        height: 64px;
+        display: grid;
+        grid-template-columns: 312px 282px 321px 280px;
+        gap: 41px;
+    }
+    &__line{
+        position: absolute;
+        width: 303px;
+        height: 0px;
+        border: 2px solid $main-color;
+        bottom: -21px;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &__item{
+        position: relative;
+        width: 100%;
+        display: flex;
+        
+        &-icon{
+            margin-right: 25px;
+        }
+        &:hover{
+            .life__line{
+                opacity: 1;
+            }
+        }
+    } 
+}

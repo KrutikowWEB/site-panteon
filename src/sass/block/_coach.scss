@@ -1,0 +1,100 @@
+.coach{
+    position: relative;
+    width: 100%;
+    background-color: $bg-color;
+    min-height: 827px;
+    padding-top: 100px;
+    &__elem{
+        position: absolute;
+        &_1{
+            top: 50px;
+            left: 0;
+        }
+        &_2{
+            top: 25px;
+            left: 0;
+        }
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__title{
+        margin-top: 207px;
+    }
+    &__item{
+        &-name{
+            margin-top: 20px;
+        }
+        &-info{
+            margin-top: 10px;
+            &:nth-last-child(3){
+                margin-top: 15px;
+            }
+        }
+    }
+    &__slick{
+        position: relative;
+        width: 1104px;
+        margin-left: 55px;
+    }
+    .slick-list{
+        padding:0 71% 0 0 !important;
+    }
+    .slick-prev{
+        z-index: 1;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        bottom: -70px;
+        left: 390px;
+        &:hover{
+            svg{
+                transition: all 0.3s;
+                fill: $main-color;
+            }
+        }
+    }
+    .slick-next{
+        z-index: 1;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        bottom: -70px;
+        left: 470px;
+        transition: all 0.3s;
+        &:hover{
+            svg{
+                transition: all 0.3s;
+                fill: $main-color;
+            }
+        }
+    }
+    .slick-dots{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .slick-dots button {
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        outline: none; 
+        font-size: 0;
+        margin-right: 30px;
+        transition: all 0.3s;
+        &:hover{
+            background: $main-color;
+        }
+    }
+    .slick-dots li[class="slick-active"] button {
+        background: $main-color;
+    }
+}

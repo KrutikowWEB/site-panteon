@@ -1,0 +1,74 @@
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 241px;
+    background: #000000;
+    padding-top: 50px;
+    &__wrapper{
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        a{
+            transition: all 0.3s;
+            &:hover{
+                color: $main-color;
+                text-decoration: none;
+            }
+            svg{
+                transition: all 0.2s;
+                &:hover{
+                    fill: $main-color;
+                    stroke: $main-color;
+                }
+            }
+        }
+    }
+    &__left{
+        width: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-information{
+            display: grid;
+            grid-template: repeat(2, 22px)/12px 168px;
+            gap: 15px;
+        }
+        &-logo{
+            margin-bottom: 23px;
+        }
+        #city{
+            grid-column: 1/3;
+        }
+    }
+    &__center{
+        margin-left: 110px;
+        display: grid;
+        grid-template: repeat(3, 24px)/84px 69px 185px;
+        column-gap: 63px;
+        #ticket1{
+            grid-column: 3/4;
+        }
+    }
+    &__right{
+        width: 471px;
+        margin-left: 80px;
+        display: grid;
+        grid-template: repeat(4,24px)/108px 253px;
+        row-gap: 15px;
+        column-gap: 110px;
+        #confid{
+            grid-column: 2;
+            grid-row: 4;
+        }
+        #time{
+            grid-column: 2;
+            grid-row: 3;
+        }
+        &-icons{
+            width: 68px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

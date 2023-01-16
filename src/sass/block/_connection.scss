@@ -1,0 +1,51 @@
+.connection{
+    width: 100%;
+    background: url('../img/questions/question_bg.png') center center/ cover no-repeat;
+    height: 600px;
+    padding-top: 111px;
+    &__wrapper{
+        width: 351px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+    }
+    &__title{
+        color: #FFFFFF;
+    }
+    &__info{
+        text-align: center;
+        margin-top: 25px;
+        span{
+            color: $main-color;
+        }
+    }
+    &__form{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input{
+        width: 351px;
+        height: 35px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+        margin-top: 25px;
+        &:nth-child(1){
+            margin-top: 0;
+        }
+    }
+    &__btn{
+        margin-top: 38px;
+    }
+    &__deskr{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

@@ -1,0 +1,77 @@
+.galery{
+    position: relative;
+    width: 100%;
+    background-color: $bg-color;
+    padding-top: 100px;
+    min-height: 1130px;
+    &__elem{
+        position: absolute;
+        &_1{
+            bottom:0;
+            left: 0;
+        }
+        &_2{
+            bottom: 34px;
+            left: 0;
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    &__slick1{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 1162px;
+    }
+    .slick-prev , .slick-next{
+        z-index: 1;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -81px;
+        &:hover{
+            svg{
+                transition: all 0.3s;
+                fill: $main-color;
+            }
+        }
+    }
+    .slick-next{
+        left: 1182px;
+    }
+    .slick-dots{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        list-style-type: none;
+    }
+    .slick-dots button {
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        outline: none; 
+        font-size: 0;
+        margin-right: 30px;
+        transition: all 0.3s;
+        &:hover{
+            background: $main-color;
+        }
+    } 
+    .slick-dots li[class="slick-active"] button {
+        background: $main-color;
+    }
+    &__slick2{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 1162px;
+    }
+}
